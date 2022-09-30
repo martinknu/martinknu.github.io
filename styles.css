@@ -88,11 +88,11 @@ body{
 
 .navigation > div {
     display: flex;
-    height: 50px;
-    width: 200px;
+    height: 800px;
+    width: 400px;
     font-size: 1rem;
-    border: 1px solid royalblue;
-    border-radius: 5% / 20%;
+    border: 2px solid royalblue;
+    border-radius: 20% / 10%;
     margin: 10px;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,8 @@ body{
 }
 
 .navigation_01{
-   
+    display: flex;
+    flex-direction: column;
 }
 .navigation_02{
 
@@ -109,6 +110,22 @@ body{
 .navigation_03{
 
 }
+
+.card_media{
+    border: 1px solid black;
+    background-color: green;
+    width: 50%;
+    height: 50%;
+}
+
+.card_header{
+    color: red;
+}
+
+.card_desc{
+    color: yellow;
+}
+
 
 .content{
     flex-basis: 80%;
