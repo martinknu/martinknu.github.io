@@ -88,22 +88,21 @@ img {
 }
 
 
+/*Card*/
 .navigation > div {
     display: flex;
     height: 600px;
     width: 300px;
-    border: 1px solid royalblue;
+    border: 1px solid white; 
     border-radius: 20% / 10%;
-    margin: 5px;
+    margin: 10px;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
     flex-direction: column;
 }
 
-
+/*Card picture*/
 .card_media{
-    background-color: rgb(245, 209, 8);
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -111,16 +110,22 @@ img {
     margin-top:15px;
 }
 
+/*Card header*/
 .card_header{
     color: black;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
+/*Card description*/
 .card_desc{
     color: black;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 1rem;
 }
 
