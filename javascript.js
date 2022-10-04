@@ -1,5 +1,5 @@
 // Strict mode applied
-use_strict
+"use strict";
 
 
 // Mouseover big div
