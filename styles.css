@@ -2,6 +2,7 @@
 :root{
     --cardheight: 500px;
     --cardwidth: 250px;
+    --cardborderradius: 3%;
 }
 
 *{
@@ -37,25 +38,26 @@ img {
 
 /*hero section*/
 .hero{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgb(150, 167, 253) 28%, rgb(255, 255, 255) 84%); 
+    background: darkgray;
+    background: radial-gradient(circle, lightgray 28%, white 84%); 
     width: 100%;
     min-height: 250px;
     align-items: center;
     margin: auto;
     display: flex;
     justify-content: center;
+    margin-bottom: -30px;
 }
 
 /*Item within hero section*/
 .hero_div{
-    background-color: royalblue;
+    background-color: darkgray;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     font-size: 15rem;
     text-align: center;
-    color: goldenrod;
+    color: white;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -77,6 +79,7 @@ img {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     justify-content: center;
+    z-index: 10;
 }
 
 .top{
@@ -99,13 +102,26 @@ img {
     display: flex;
     height: var(--cardheight);
     width: var(--cardwidth);
-    border: 1px solid white; 
-    border-radius: 20% / 10%;
+    border: 1px solid rgba(255, 255, 255, 0.0); 
+    border-radius: var(--cardborderradius) / calc(var(--cardborderradius) / 2);
     margin: 10px;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    z-index: 3;
 }
+
+
+/*Card top*/
+.card_top{
+    width: calc(var(--cardwidth) - 2px );
+    height: calc(var(--cardheight) / 100 * 50);
+    border-radius: var(--cardborderradius)  var(--cardborderradius)  0%  0%;
+    margin-bottom: calc(var(--cardheight) / 100 * 50 * -1);
+    background-color: darkgray;
+    z-index: 1;
+}
+
 
 /*Card picture*/
 .card_media{
@@ -114,6 +130,7 @@ img {
     border-radius: 50%;
     background-size: cover;
     margin-top:15px;
+    z-index: 2;
 }
 
 /*Card header*/
@@ -124,12 +141,13 @@ img {
     margin-right: 2%;
     font-size: 1.2rem;
     font-weight: bold;
+    z-index: 2;
 }
 
 /*Card description*/
 .card_desc{
     color: black;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 2%;
     margin-right: 2%;
     font-size: 1rem;

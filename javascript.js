@@ -18,7 +18,7 @@ function bigImg(x) {
     //x.style.height = itemHeight + 6 + "px"
     //x.style.width = itemWidth + 3 + "px";
 
-    x.style.border = "1px solid royalblue"
+    x.style.border = "1px solid darkgray"
 
 }
   
@@ -39,5 +39,5 @@ function normalImg(x) {
     //x.style.height = itemHeight - 6 + "px"
     //x.style.width = itemWidth - 3 + "px";
 
-    x.style.border = "1px solid white"
+    x.style.border = "1px solid rgba(255, 255, 255, 0.0)"
 }
