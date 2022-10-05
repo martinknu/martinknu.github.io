@@ -46,7 +46,7 @@ img {
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: -30px;
+    margin-bottom: -2.5%;
 }
 
 /*Item within hero section*/
@@ -62,7 +62,8 @@ img {
     justify-content: center;
     margin: auto;
     display: flex;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 5px 10px darkgray;
 }
 
 
@@ -105,7 +106,7 @@ img {
     width: var(--cardwidth);
     border: 1px solid rgba(255, 255, 255, 0.0); 
     border-radius: var(--cardborderradius) / calc(var(--cardborderradius) / 2);
-    margin: 10px;
+    margin: 15px;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
