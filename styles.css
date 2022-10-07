@@ -1,8 +1,9 @@
 
 :root{
-    --cardheight: 500px;
-    --cardwidth: 250px;
-    --cardborderradius: 3%;
+    --cardHeight: 500px;
+    --cardWidth: 250px;
+    --cardBorderRadius: 3%;
+    --headerFloatWidth: 50px;
 }
 
 *{
@@ -15,7 +16,6 @@ body{
     text-align: center;
     background-color: white;
     margin: auto;
-    height: 2200px;
 }
 
 img {
@@ -27,6 +27,7 @@ img {
 #container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -34,6 +35,65 @@ img {
 #container div {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* Header will have a flex basis of 100% to take up one whole column at all times*/
+.header{
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100px;;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+}
+
+.centered_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    height: 100px;
+    max-width: 1120px;
+    z-index: 9999;
+    justify-content: space-between;
+    column-count: 3;
+    column-gap: 20px;
+    align-items: center;
+}
+
+
+.header_front{
+    height: 100px;
+    width: var(--headerFloatWidth); 
+
+}
+
+/*Text within header*/
+.centered_header h1{
+    display: flex;
+    height: 100px;
+    color: darkgray;
+    margin: 0px;
+    align-items: center;
+}
+
+/*Div within header: contact, etc*/
+.header_float{
+    color: darkgray;
+    background: lightgray;
+    z-index: 10;
+    border-radius: 50% / 50%;
+    height: var(--headerFloatWidth);
+    width: var(--headerFloatWidth);
+}
+
+
+/*Top underneath header*/
+.top{
+    height: 80px;
+    width: 100%;
 }
 
 /*hero section*/
@@ -66,29 +126,7 @@ img {
     box-shadow: 0 0 5px 10px darkgray;
 }
 
-
-/* Header will have a flex basis of 100% to take up one whole column at all times*/
-.header{
-    display: flex;
-    flex-basis: 100%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-direction: row;
-    text-align: center; 
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    justify-content: center;
-    z-index: 10;
-}
-
-.top{
-    height: 80px;
-    width: 100%;
-}
-
+/*Navigation (cards)*/
 .navigation{
     display: flex;
     flex-direction: row;
@@ -98,14 +136,13 @@ img {
     margin: auto;
 }
 
-
 /*Card*/
 .navigation > div {
     display: flex;
-    height: var(--cardheight);
-    width: var(--cardwidth);
+    height: var(--cardHeight);
+    width: var(--cardWidth);
     border: 1px solid rgba(255, 255, 255, 0.0); 
-    border-radius: var(--cardborderradius) / calc(var(--cardborderradius) / 2);
+    border-radius: var(--cardBorderRadius) / calc(var(--cardBorderRadius) / 2);
     margin: 15px;
     justify-content: flex-start;
     align-items: center;
@@ -113,22 +150,20 @@ img {
     z-index: 3;
 }
 
-
 /*Card top*/
 .card_top{
-    width: calc(var(--cardwidth) - 2px );
-    height: calc(var(--cardheight) / 100 * 50);
-    border-radius: var(--cardborderradius)  var(--cardborderradius)  0%  0%;
-    margin-bottom: calc(var(--cardheight) / 100 * 50 * -1);
+    width: calc(var(--cardWidth) - 2px );
+    height: calc(var(--cardHeight) / 100 * 50);
+    border-radius: var(--cardBorderRadius)  var(--cardBorderRadius)  0%  0%;
+    margin-bottom: calc(var(--cardHeight) / 100 * 50 * -1);
     background-color: darkgray;
     z-index: 1;
 }
 
-
 /*Card picture*/
 .card_media{
-    width: calc(var(--cardwidth) / 100 * 75);
-    height: calc(var(--cardwidth) / 100 * 75);
+    width: calc(var(--cardWidth) / 100 * 75);
+    height: calc(var(--cardWidth) / 100 * 75);
     border-radius: 50%;
     background-size: cover;
     margin-top:15px;
@@ -154,7 +189,6 @@ img {
     margin-right: 2%;
     font-size: 1rem;
 }
-
 
 .content{
     flex-basis: 80%;
