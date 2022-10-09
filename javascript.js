@@ -41,3 +41,12 @@ function normalImg(x) {
 
     x.style.border = "1px solid rgba(255, 255, 255, 0.0)"
 }
+
+
+// Contact me form submit
+function contactMeSubmit(e) {
+  console.log(`Form Submitted! Time stamp: ${e.timeStamp}`);
+  e.preventDefault();
+}
+
+contact_form.addEventListener('submit', contactMeSubmit);
