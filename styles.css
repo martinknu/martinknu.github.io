@@ -4,6 +4,7 @@
     --cardWidth: 250px;
     --cardBorderRadius: 3%;
     --headerFloatWidth: 50px;
+    --starshape: "m 400 1200 l 400 -200 l 400 200 l -100 -400 l 300 -300 l -400 0 l -200 -400 l -200 400 l -400 0 l 300 300 z";
 }
 
 *{
@@ -219,3 +220,47 @@ a{
     flex-shrink: 0;
     flex-direction: row;
 }
+
+
+
+/*
+.pic_frame_container{
+    display: flex;
+    min-height: 4000px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.pic_frame{
+    clip-path: path(var(--starshape));
+    border: 1px solid black;
+    width: 40%;
+}
+
+*/
+.frame_container_star{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.frame_star{
+    height: auto;
+    border: 1px solid black;
+
+}
+
+.img_star{
+    transform: scale(0.1);
+    clip-path: path(var(--starshape)); */
+    display: block;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
