@@ -15,11 +15,9 @@ function bigImg(x) {
     console.log(`The height is ${itemHeight}`);
     console.log(`The width is ${itemWidth}`);
 
-    //x.style.height = itemHeight + 6 + "px"
-    //x.style.width = itemWidth + 3 + "px";
-
-    x.style.border = "1px solid darkgray"
-
+    //x.style.border = "1px solid darkgray"
+    x.style.outline = "1px solid darkgray"
+    x.style.outlineOffset = "-1px"  
 }
   
 // Mouseover normal div
@@ -36,21 +34,10 @@ function normalImg(x) {
     console.log(`The height is ${itemHeight}`);
     console.log(`The width is ${itemWidth}`);
 
-    //x.style.height = itemHeight - 6 + "px"
-    //x.style.width = itemWidth - 3 + "px";
-
-    x.style.border = "1px solid rgba(255, 255, 255, 0.0)"
+   // x.style.border = "1px solid rgba(255, 255, 255, 0.0)"
+    x.style.outline = "1px none darkgray"
+    x.style.outlineOffset = "-1px"  
 }
 
-// Contact me form submit
-function contactMeSubmit(e) {
-    e.preventDefault();
-    const data = Object.fromEntries(new FormData(e.target).entries());
-    const postaddress = "martinknu@gmail.com"
-   //console.log(${data});
-    //console.log(`Form Submitted! Time stamp: ${e.timeStamp}`);
-    window.location.href = `mailto:${postaddress}?cc=&body=Hi Martin, ${data.comments} &subject=From: ${data.name}`;
-    //window.location.href = "mailto:info@w3docs.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Dear W3docs Team";
-}
 
-contact_form.addEventListener('submit', contactMeSubmit);
+
