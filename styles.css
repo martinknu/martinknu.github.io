@@ -280,3 +280,23 @@ a{
     width: 800px;
 
 }
+
+.gallery_container{
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    float: center;
+}
+
+.image_gallery{
+    display: flex;
+    min-width: 100%;
+
+}
+
+/*gallery nth child   */
+.gallery_container :nth-child(2n+0) {
+
+    justify-content: end;
+  }
+
