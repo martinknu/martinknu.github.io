@@ -4,37 +4,23 @@
 
 // Mouseover big div
 function bigImg(x) {
-    console.log(`The object is ${x}`);
-
     const itemInfo =  x.getBoundingClientRect();
-    console.log(`The item info ${itemInfo}`);
 
     let itemHeight = itemInfo.height;
     let itemWidth = itemInfo.width;
 
-    console.log(`The height is ${itemHeight}`);
-    console.log(`The width is ${itemWidth}`);
-
-    //x.style.border = "1px solid darkgray"
-    x.style.outline = "1px solid darkgray"
+    x.style.outline = "1px solid rgba(00,73, 177, 1.0)"
     x.style.outlineOffset = "-1px"  
 }
   
 // Mouseover normal div
 function normalImg(x) {
 
-    console.log(`The object is ${x}`);
-
     const itemInfo =  x.getBoundingClientRect();
-    console.log(`The item info ${itemInfo}`);
 
     let itemHeight = itemInfo.height;
     let itemWidth = itemInfo.width;
 
-    console.log(`The height is ${itemHeight}`);
-    console.log(`The width is ${itemWidth}`);
-
-   // x.style.border = "1px solid rgba(255, 255, 255, 0.0)"
     x.style.outline = "1px none darkgray"
     x.style.outlineOffset = "-1px"  
 }

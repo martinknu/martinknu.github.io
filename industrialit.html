@@ -4,12 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contact form</title>
-        <meta name="description" content="Contact">
+        <title>Cool cats and CSS effects</title>
+        <meta name="description" content="Cool cats and CSS effects">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+
+        <div id="container">
 
             <header class="header">
                 <div class="centered_header"> 
@@ -31,32 +33,25 @@
             </header>
 
             <div class="top"> </div>
-            
-            <form id="contact_form">
-                <div>
-                    <label for="name">Name:
-                    <input type="text" name="name" id="name" />
-                    </label>
-                </div>
-                <div>
-                    <label for="email">Email:
-                    <input type="text" name="email" id="email" />
-                    </label>
-                </div>
-                <div>
-                    <label>Comments:</label>
-                    <br />
-                    <textarea name="comments" rows="12" cols="35">Your comments / questions</textarea>
-                </div>
-                <div>
-                    <input type="submit" name="submit" value="Send" />
-                    <input type="reset" name="reset" value="Clear Form" />
-                </div>
-            </form>
 
-            
+
+
+            <div class="gallery_container" >
+                <div class="image_gallery">
+                    <img src="media/S7-400.png" alt="allan-lainez-N2YmaF7FZ7E-unsplash.jpg" width="300"  style="display: block; margin:10px; border-radius: 15px; " >
+                    <div>I have over 16 years of experience with Industrial IT. PLC applications in many different languages and products</div>
+                </div>
+                <div class="image_gallery">
+                    <div>SCADA applications for a broad range of industries, food production, process, power and marine</div>  
+                    <img src="media/SCADA_trend.png" alt="fashion.jpg" width="300"  style="display: block; margin:10px; border-radius: 15px" >
+                </div>
+                <div class="image_gallery">
+                    <img src="media/FC300.jpg" alt="good-faces-F0bQv2nd8q8-unsplash.jpg" width="300"  style="display: block; margin:10px; border-radius: 15px" >
+                    <div>Motion applications</div>
+                </div>
+            </div>
         </div>
-    
-        <script src="contactjava.js" async defer></script>
+        
+        <script src="javascript.js" async defer></script>
     </body>
 </html>
