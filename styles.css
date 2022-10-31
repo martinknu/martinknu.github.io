@@ -216,13 +216,11 @@ a{
     display: flex;
     height: var(--cardHeight);
     width: var(--cardWidth);
-    border: 1px solid rgba(255, 255, 255, 0.0); 
     border-radius: var(--cardBorderRadius) / calc(var(--cardBorderRadius) / 2);
-
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    z-index: 3;
+    z-index: 5;
 }
 
 /*Card top*/
@@ -232,7 +230,7 @@ a{
     border-radius: var(--cardBorderRadius)  var(--cardBorderRadius)  0%  0%;
     margin-bottom: calc(var(--cardHeight) / 100 * 50 * -1);
     background-color: var(--complementryColor);
-    z-index: 1;
+    z-index: 4;
 }
 
 /*Card picture container*/
@@ -243,7 +241,7 @@ a{
     border-radius: 50%;
     background-size: cover; 
     margin-top:15px;
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -255,7 +253,7 @@ a{
     margin-right: 2%;
     font-size: 1.2rem;
     font-weight: bold;
-    z-index: 2;
+    z-index: 5;
 }
 
 /*Card description*/
@@ -315,12 +313,12 @@ a{
 .image_gallery_left img{
 width: 20%;
 border: 1px solid red;
-width: 600px;
+width: 150px;
 }
 .image_gallery_right img{
 width: 20%;
 border: 1px solid red;
-width: 600px;
+width: 150px;
 }
 
 
