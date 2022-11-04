@@ -10,12 +10,13 @@
     --blobGradient: linear-gradient(135deg, #9098b8, #b89098);
     --starshape: "m 400 1200 l 400 -200 l 400 200 l -100 -400 l 300 -300 l -400 0 l -200 -400 l -200 400 l -400 0 l 300 300 z";
     --mainColor: rgba(00, 73, 177, 1.0);
-    --complementryColor: rgb(61, 139, 255);
+    --complementryColor: rgba(00, 73, 177, 0.8);/*rgb(61, 139, 255);*/
     --complementryColor2: rgba(61, 139, 255, 0.7);
     --logoComplementryColor: rgba(255,102,0,1.0);
     --headerBackground: rgba(209,210,209, 0.8);
     --backgroundColor: rgba(209,210,209,1.0);
     --cardBackground: rgba(244,244,244,1.0);
+    --cardTextColor: rgb(255,255,255);
 }
 
 *{
@@ -278,7 +279,7 @@ a{
 
 /*Card header*/
 .card_header{
-    color: var(--mainColor);
+    color: var(--cardTextColor);
     margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -343,12 +344,10 @@ a{
 
 .image_gallery_left img{
 width: 20%;
-border: 1px solid red;
 width: 150px;
 }
 .image_gallery_right img{
 width: 20%;
-border: 1px solid red;
 width: 150px;
 }
 
@@ -357,10 +356,15 @@ width: 150px;
    width: 100%;
    text-align: left;
    padding: 4px;
-   border: 1px solid black;
+
 }
 
 .gallery_image_text{
     display: block;
-    border: 1px solid cyan;
+}
+
+
+.svg_divider{
+
+
 }
