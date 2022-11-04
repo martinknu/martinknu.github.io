@@ -1,7 +1,7 @@
 // Strict mode applied
 "use strict";
 
-
+/*
 // Mouseover big div
 function bigImg(x) {
     const itemInfo =  x.getBoundingClientRect();
@@ -24,6 +24,6 @@ function normalImg(x) {
     x.style.outline = "1px none darkgray"
     x.style.outlineOffset = "-1px"  
 }
-
+*/
 
 

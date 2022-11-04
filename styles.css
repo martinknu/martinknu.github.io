@@ -10,11 +10,12 @@
     --blobGradient: linear-gradient(135deg, #9098b8, #b89098);
     --starshape: "m 400 1200 l 400 -200 l 400 200 l -100 -400 l 300 -300 l -400 0 l -200 -400 l -200 400 l -400 0 l 300 300 z";
     --mainColor: rgba(00, 73, 177, 1.0);
-    --complementryColor: rgb(110, 162, 235);
-    --complementryColor2: rgba(97, 218, 255, 1.0);
+    --complementryColor: rgb(61, 139, 255);
+    --complementryColor2: rgba(61, 139, 255, 0.7);
     --logoComplementryColor: rgba(255,102,0,1.0);
     --headerBackground: rgba(209,210,209, 0.8);
     --backgroundColor: rgba(209,210,209,1.0);
+    --cardBackground: rgba(244,244,244,1.0);
 }
 
 *{
@@ -185,6 +186,7 @@ a{
     border-radius: 15px; 
     text-align: left;
     min-width: 300px;
+    opacity: 0.6;
 }
 
 /*hero section Old hero logo*/
@@ -227,6 +229,9 @@ a{
     align-items: center;
     margin: auto;
 }
+.navigation div.navigation_01:hover {
+    outline: 1px solid var(--complementryColor2);
+}
 
 
 /*Card link*/
@@ -240,12 +245,13 @@ a{
 .navigation_01 {
     display: flex;
     height: var(--cardHeight);
-    width: var(--cardWidth);
+    width: calc(var(--cardWidth) - 2px);
     border-radius: var(--cardBorderRadius) / calc(var(--cardBorderRadius) / 2);
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     z-index: 5;
+    background-color: var(--cardBackground);
 }
 
 /*Card top*/
