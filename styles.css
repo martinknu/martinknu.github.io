@@ -319,6 +319,15 @@ a{
 
 }
 
+#svg_container{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background-image: url('media/sinodialpic.svg');
+    background-size: contain;
+    border: 1px solid yellow;
+
+}
 
 /*gallery nth child   */
 /*
@@ -336,7 +345,6 @@ a{
     min-width: 100%;
     margin: 10px;
     padding: 10px;
-    background-image: url("./media/sinodialpic.svg");
 }
 
 .image_gallery_right{
