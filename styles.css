@@ -32,9 +32,6 @@ body{
     margin: auto;
 }
 
-img {
-
-}
 
 a{
     margin: 0px;
@@ -72,7 +69,6 @@ a{
     z-index: 9999;
     justify-content: space-between;
     column-count: 2;
- /*   column-gap: 20px; */
     align-items: center;
 }
 
@@ -97,7 +93,6 @@ a{
     border-radius: 50% 50%;
     transition: all 0.2s ease-in-out;
 }
-
 .header_nav_to_index:hover{ 
     transform: scale(1.05);
 }
@@ -134,11 +129,8 @@ a{
     transition: all 0.2s ease-in-out; 
 
 }
-
 .contact_me:hover{ 
     transform: scale(1.05);
-
-
 }
 
 /*Top underneath header*/
@@ -182,8 +174,7 @@ a{
     min-width: 360px;
 }
 
-@media(max-width: 640px){
-
+@media(max-width: 1441px){
     .hero_text{
         left: 0vw; 
     }
@@ -293,8 +284,6 @@ a{
 }
 
 
-
-
 .content{
     flex-basis: 90%;
     flex-grow: 1;
@@ -314,48 +303,18 @@ a{
 
 }
 
-#svg_container{
-    height: 500px;
-    width: 100%;
-    position: absolute;
-    background-image: url('media/sinodialpic.svg');
-    background-size: contain;
-    border: 1px solid yellow;
- /*   contain: content; */
-
-}
-
-/*gallery nth child   */
-/*
-.gallery_container :nth-child(2n+0) {
-    justify-content: end;
-    text-align: right;
-}
-*/
-
-div > article{
-/*    border: 1px solid black;
-    margin-top: var(--topHeight);*/
-}
-
 article{
+    position: relative; 
+    top: 0px; 
+    left: 10px;
     font-size: 0.5em;
-
 }
-
 
 article p{
     margin-top: 2px;
     padding: 0px;
-
 }
 
-article h2{
-    margin: 0px;
-    padding: 5px;
-    border : 1px solid red;
-
-}
 .image_gallery_left{
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +323,8 @@ article h2{
     min-width: 100%;
     margin: 10px;
     padding: 10px;
-    border: 1px solid green;
+    float: left;
+    column-count: 2;
 }
 
 .image_gallery_right{
@@ -376,17 +336,14 @@ article h2{
     margin: 10px;
     padding: 10px;
     float: right;
-    border: 1px solid red;
+    column-count: 2;
 }
 
 
-.image_gallery_left img{
-width: 20%;
-width: 250px;
-}
-.image_gallery_right img{
-width: 20%;
-width: 250px;
+.image_gallery_img{
+    width: 20%;
+    width: 250px;
+    border-radius: 15px
 }
 
 
@@ -399,10 +356,29 @@ width: 250px;
 
 .gallery_image_text{
     display: block;
+    width: 60%;
+    margin: 20px 20px;
+    background-color: var(--complementryColor2);
+    padding: 5px;
+    border-radius: 15px;
+    height: fit-content;
 }
 
 
-.svg_divider{
+.gallery_image_div{
+    height: auto;
+}
+
+.footer_content{
+
+    flex-basis: 90%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: row;
 
 
+}
+
+.footer{
+    margin-bottom: 10px;
 }
