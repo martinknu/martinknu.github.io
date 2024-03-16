@@ -26,4 +26,30 @@ function normalImg(x) {
 }
 */
 
+// AJAX Asyncronous Javascript and XML
+// Simplest way to send data from a server and get data from a server.
+// It is super light weight
 
+// Get HTML elements 
+//const divName = document.getElementById("name");
+//const divHomeworld = document.getElementById("homeworld");
+//const divPictures = document.getElementById("pictures");
+
+
+// Event listener for button
+document.getElementById("request_prices").addEventListener("click", 
+function(){ 
+    // Query string
+    const queryString = `https://api.energidataservice.dk/dataset/ElectricityProdex5MinRealtime?offset=0&sort=Minutes5UTC%20DESC`  // `https://swapi.dev/api/people/${randomNum}/`   
+    // AJAX Fetch
+    fetch(queryString)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        // Write to HTML elements 
+        //divName.innerHTML = data["name"];
+        //divHomeworld.innerHTML = data["homeworld"];
+        //divPictures.innerHTML = data["films"]
+    })
+
+});

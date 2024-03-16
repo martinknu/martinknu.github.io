@@ -161,16 +161,16 @@ a{
 
 .hero_text{
     position: relative; 
-    top: 25%; 
-    left: 35vw; 
-    width: 30vw; 
+    top: 15%; 
+    left: 25vw; 
+    width: 50vw; 
     background-color:var(--mainColor); 
     color: white; 
     font-size: 2em; 
     padding: 25px; 
     border-radius: 15px; 
     text-align: left;
-    opacity: 0.6;
+    opacity: 0.8;
     min-width: 360px;
 }
 
@@ -185,6 +185,10 @@ a{
     height: fit-content;
 }
 
+.hero_text_para{
+    color: white; 
+    font-size: 0.75em; 
+}
 
 /*Item within hero section*/
 .hero_div{
